@@ -46,7 +46,7 @@ function Banner () {
             <section className="banner" id="about-us">
                 <Container>
                     <Row className="align-items-center">
-                        <Col xs={12} md={6} xl={5}>
+                        <Col xs={12} md={6} xl={7}>
                             <span className="tagline">Welcome to Aneshka Dental Care Center</span>
                             <h1>{`We have `} <span className="wrap">{text}</span></h1>
                             <p>Aneshka Dental Care center About the Clinic and Doctors Dummy Text. Aneshka Dental Care
@@ -57,7 +57,7 @@ function Banner () {
                                 console.log("clicked from banner")
                             }}>Book Appointment<ArrowRightCircle size={25}/></button>
                         </Col>
-                        <Col xs={12} md={6} xl={7}>
+                        <Col xs={12} md={6} xl={5}>
                             <img src={TeethImg} alt="Header Img" width={680} height={614}/>
                         </Col>
                     </Row>
