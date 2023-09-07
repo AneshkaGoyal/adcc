@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import Review from "./components/Review";
 import SuccessMetrics from "./components/SuccessMetrics";
 import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Banner/>
           <SuccessMetrics/>
           <Services/>
+          <Contact/>
           <Review/>
       </div>
   );

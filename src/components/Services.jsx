@@ -93,7 +93,7 @@ function Services() {
                         <h2>Services</h2>
                         <p>We conduct all latest procedures in safe and higenic environment. Or Add someother service description</p>
                         <TabContainer id="services-tabs" defaultActiveKey="first">
-                        <Nav variant="pills" defaultActiveKey="/home">
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
                                 <Nav.Link eventKey="first">Tab One</Nav.Link>
                             </Nav.Item>
