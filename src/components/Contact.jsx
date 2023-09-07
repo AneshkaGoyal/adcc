@@ -23,23 +23,40 @@ function Contact(){
         )
     }
 
+    const isVerified = () => {
+        const PHONE_REGEX =
+            new RegExp("^[0-9]{10}$");
+        if(!PHONE_REGEX.test(formDetails.phone)) {
+            setStatus({success: false, message: 'Please input 10 digit Mobile number'});
+            return false;
+        }
+        if (formDetails.firstName===undefined || formDetails.firstName.trim().length === 0){
+            setStatus({success: false, message: 'Please input valid first name'});
+            return false;
+        }
+        setStatus({success: true, message: ''})
+        return true;
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setButtonText("Sending...");
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(formDetails),
-        });
-        setButtonText("Send");
-        let result = await response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code == 200) {
-            setStatus({succes: true, message: 'Message sent successfully'});
-        } else {
-            setStatus({succes: false, message: 'Something went wrong, please try again later.'});
+        if(isVerified()) {
+            setButtonText("Sending...");
+            let response = await fetch("http://localhost:5000/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json;charset=utf-8",
+                },
+                body: JSON.stringify(formDetails),
+            });
+            setButtonText("Send");
+            let result = await response.json();
+            setFormDetails(formInitialDetails);
+            if (result.code == 200) {
+                setStatus({success: true, message: 'Message sent successfully'});
+            } else {
+                setStatus({success: false, message: 'Something went wrong, please try again later.'});
+            }
         }
     }
 
