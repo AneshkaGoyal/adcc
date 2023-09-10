@@ -42,9 +42,11 @@ function NavBar() {
                         <Nav.Link href="#faq" className={activeLink === 'faqs'? "active navbar-link": "navbar-link"} onClick={() => updateActiveLink('faqs')}>FAQs</Nav.Link>
                        <span className="navbar-text">
                            <div className="social-icon">
-                               <a href="#"><img src={navIcon1} alt=""/></a>
+                               <a href="#" onClick={()=> {alert("contact us at 9810527702")}}><img src={navIcon1} alt=""/></a>
                            </div>
-                           <button className="vvd" onClick={() => console.log("button clicked")}><span>Book Appointment</span></button>
+                           <a href="#book-appointment">
+                           <button className="vvd"><span>Book Appointment</span></button>
+                           </a>
                        </span>
                     </Nav>
                 </Navbar.Collapse>
