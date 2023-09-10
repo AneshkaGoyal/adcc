@@ -61,9 +61,9 @@ function Banner () {
                                             Clinic and Doctors Dummy Text. Aneshka Dental Care center About the Clinic
                                             and Doctors
                                             Dummy Text</p>
-                                        <button onClick={() => {
-                                            console.log("clicked from banner")
-                                        }}>Book Appointment<ArrowRightCircle size={25}/></button>
+                                        <a href="#book-appointment" className="text-decoration-none">
+                                        <button><span>Book Appointment<ArrowRightCircle size={25}/></span></button>
+                                        </a>
                                     </div>}
                             </TrackVisibility>
                         </Col>
