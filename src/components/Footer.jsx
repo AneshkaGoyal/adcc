@@ -13,7 +13,7 @@ function Footer (){
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="social-icon">
-                            <a href=""><img src={navIcon1}/></a>
+                            <a href="#" onClick={()=> {alert("contact us at 9810527702")}}><img src={navIcon1}/></a>
                         </div>
                         <p>CopyRight 2023. All rights reserved by Aneshka Dental Care Center</p>
                     </Col>
