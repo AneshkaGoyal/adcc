@@ -3,6 +3,8 @@ import {Col, Row} from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import TeethImg from '../assets/img/tooth.png';
 import {useEffect, useState} from "react";
+import "animate.css";
+import TrackVisibility from 'react-on-screen';
 
 function Banner () {
     const [loopNum, setLoopNum] = useState(0);
@@ -46,18 +48,26 @@ function Banner () {
             <section className="banner" id="about-us">
                 <Container>
                     <Row className="align-items-center">
-                        <Col xs={12} md={6} xl={5}>
-                            <span className="tagline">Welcome to Aneshka Dental Care Center</span>
-                            <h1>{`We have `} <span className="wrap">{text}</span></h1>
-                            <p>Aneshka Dental Care center About the Clinic and Doctors Dummy Text. Aneshka Dental Care
-                                center About the Clinic and Doctors Dummy Text. Aneshka Dental Care center About the
-                                Clinic and Doctors Dummy Text. Aneshka Dental Care center About the Clinic and Doctors
-                                Dummy Text</p>
-                            <button onClick={() => {
-                                console.log("clicked from banner")
-                            }}>Book Appointment<ArrowRightCircle size={25}/></button>
-                        </Col>
                         <Col xs={12} md={6} xl={7}>
+                            <TrackVisibility>
+                                {({ isVisible }) =>
+                                    <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                        <span className="tagline">Welcome to Aneshka Dental Care Center</span>
+                                        <h1>{`We have `} <span className="wrap">{text}</span></h1>
+                                        <p>Aneshka Dental Care center About the Clinic and Doctors Dummy Text. Aneshka
+                                            Dental Care
+                                            center About the Clinic and Doctors Dummy Text. Aneshka Dental Care center
+                                            About the
+                                            Clinic and Doctors Dummy Text. Aneshka Dental Care center About the Clinic
+                                            and Doctors
+                                            Dummy Text</p>
+                                        <a href="#book-appointment" className="text-decoration-none">
+                                        <button><span>Book Appointment<ArrowRightCircle size={25}/></span></button>
+                                        </a>
+                                    </div>}
+                            </TrackVisibility>
+                        </Col>
+                        <Col xs={12} md={6} xl={5}>
                             <img src={TeethImg} alt="Header Img" width={680} height={614}/>
                         </Col>
                     </Row>
