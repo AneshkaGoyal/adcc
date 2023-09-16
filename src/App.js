@@ -7,6 +7,7 @@ import SuccessMetrics from "./components/SuccessMetrics";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Services/>
           <Contact/>
           <Review/>
+          <Faq/>
           <Footer/>
       </div>
   );
