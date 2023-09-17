@@ -79,7 +79,7 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: rgba(217, 217, 217, 0.1);
+  background: #b8b8b8;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -511,6 +511,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.accordion .accordion-header button{
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  color: white;
+}
+ accordion .accordion-item .accordion-header{
+    color: #ffffff;
 }
 .App {
   text-align: center;
