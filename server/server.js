@@ -6,12 +6,12 @@ const path = require("path");
 
 // server used to send send emails
 const app = express();
-app.use(express.static(path.resolve(__dirname, '../adcc-webapp/build')));
+app.use(express.static(path.resolve(__dirname, '../build')));
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../adcc-webapp/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
 });
 
 app.listen(5000, () => console.log("Server Running"));
