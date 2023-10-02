@@ -66,7 +66,6 @@ function SuccessMetrics(){
                                 </div>
                                 <div className="item">
                                     <img src={clinicWaiting} alt="Images"/>
-                                    <h5>Waiting</h5>
                                 </div>
                                 <div className="item">
                                     <img src={clinicWaiting2} alt="Images"/>
