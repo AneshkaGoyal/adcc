@@ -1,5 +1,4 @@
 import {Col, Container, Row} from "react-bootstrap";
-import logo from "../assets/img/logo.svg"
 import navIcon1 from '../assets/img/call.svg';
 
 function Footer (){
@@ -8,14 +7,11 @@ function Footer (){
         <footer className="footer">
             <Container>
                 <Row className="align-items-center">
-                    <Col sm={6}>
-                        <img src={logo} alt="Logo"/>
-                    </Col>
-                    <Col sm={6} className="text-center text-sm-end">
+                    <Col sm={12} className="text-center text-sm-end">
                         <div className="social-icon">
                             <a href="#" onClick={()=> {alert("contact us at 9810527702")}}><img src={navIcon1}/></a>
                         </div>
-                        <p>CopyRight 2023. All rights reserved by Aneshka Dental Care Center</p>
+                        <p>CopyRight 2023. All rights reserved by Aneshka Dental Care Centre</p>
                     </Col>
                 </Row>
             </Container>
