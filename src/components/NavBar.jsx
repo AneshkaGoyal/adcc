@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/ToothImgLogo.svg';
 import navIcon1 from '../assets/img/call.svg';
 
 function NavBar() {
@@ -29,7 +29,7 @@ function NavBar() {
         <Navbar expand="lg" className={scrolled ? "scrolled":""}>
             <Container>
                 <Navbar.Brand href="#about-us">
-                    <img src={logo} alt="ADCC"/>
+                    <img src={logo} alt="ADCC" width="155px"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"/>
@@ -41,7 +41,7 @@ function NavBar() {
                         <Nav.Link href="#reviews" className={activeLink === 'reviews'? "active navbar-link": "navbar-link"} onClick={() => updateActiveLink('reviews')}>Reviews</Nav.Link>
                         <Nav.Link href="#faq" className={activeLink === 'faqs'? "active navbar-link": "navbar-link"} onClick={() => updateActiveLink('faqs')}>FAQs</Nav.Link>
                        <span className="navbar-text">
-                           <div className="social-icon">
+                           <div className="social-icon , shaking">
                                <a href="#" onClick={()=> {alert("contact us at 9810527702")}}><img src={navIcon1} alt=""/></a>
                            </div>
                            <a href="#book-appointment">
