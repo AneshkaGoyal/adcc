@@ -2,7 +2,7 @@ import {Col} from "react-bootstrap";
 
 function ServiceCard({title, description, imageUrl}) {
     return (
-        <Col sm={6} md={4}>
+        <Col sm={6} md={4} xs={12}>
             <div className="proj-imgbx">
                 <img src={imageUrl}/>
             <div className="proj-txtx">
