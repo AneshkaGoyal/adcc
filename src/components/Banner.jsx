@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import {Col, Row} from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
-import TeethImg from '../assets/img/tooth.png';
 import {useEffect, useState} from "react";
 import "animate.css";
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +10,7 @@ function Banner () {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const toRotate = ["served 1000+ happy patients", "25+ years of expertise", "250+ procedures carried out"];
+    const toRotate = ["served 100000+ happy patients", "25+ years of expertise", "250+ procedures carried out", "best quality affordable services"];
     const period = 2000;
 
     useEffect(() => {
@@ -52,23 +51,16 @@ function Banner () {
                             <TrackVisibility>
                                 {({ isVisible }) =>
                                     <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                        <span className="tagline">Welcome to Aneshka Dental Care Center</span>
+                                        <span className="tagline">Welcome to Aneshka Dental Care Centre</span>
                                         <h1>{`We have `} <span className="wrap">{text}</span></h1>
-                                        <p>Aneshka Dental Care center About the Clinic and Doctors Dummy Text. Aneshka
-                                            Dental Care
-                                            center About the Clinic and Doctors Dummy Text. Aneshka Dental Care center
-                                            About the
-                                            Clinic and Doctors Dummy Text. Aneshka Dental Care center About the Clinic
-                                            and Doctors
-                                            Dummy Text</p>
+                                        <p>We are one of the best dental clinics that you can trust. We aim to provide you
+                                        the dental care you deserve with our expert, compassionate, dedicated work style with
+                                        international standards. Our motto "Smile with confidence"</p>
                                         <a href="#book-appointment" className="text-decoration-none">
                                         <button><span>Book Appointment<ArrowRightCircle size={25}/></span></button>
                                         </a>
                                     </div>}
                             </TrackVisibility>
-                        </Col>
-                        <Col xs={12} md={6} xl={5}>
-                            <img src={TeethImg} alt="Header Img" width={680} height={614}/>
                         </Col>
                     </Row>
                 </Container>
