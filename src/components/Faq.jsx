@@ -9,25 +9,21 @@ function Faq() {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>What are clinic Timings</Accordion.Header>
                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        The clinic timings are - 10:00am to 1:00pm in the morning and 5:00pm to 9:00pm in the evening, from Monday to Saturday.Sunday we are working
+                        by appointment only.
+                        It is preferred to take prior appointment on telephone to avoid waiting time.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                    <Accordion.Header>Is online payment applicable</Accordion.Header>
+                    <Accordion.Header>Is online payment acceptable</Accordion.Header>
                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        Yes. We also promote digital payments.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                    <Accordion.Header>How frequently should I visit a dentist</Accordion.Header>
+                    <Accordion.Body>
+                        You should visit a dentist at least twice in a year. As Prevention is better than Cure.
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
